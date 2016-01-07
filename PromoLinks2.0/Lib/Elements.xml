@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Lib">
+    <File Path="Lib\icon-list.json.txt" Url="Lib/icon-list.json.txt" ReplaceContent="TRUE" />
+    <File Path="Lib\o365-icons\o365-icons.css" Url="Lib/o365-icons/o365-icons.css" ReplaceContent="TRUE" />
+    <File Path="Lib\o365-icons\Office365Icons.eot" Url="Lib/o365-icons/Office365Icons.eot" ReplaceContent="TRUE" />
+    <File Path="Lib\o365-icons\Office365Icons.svg" Url="Lib/o365-icons/Office365Icons.svg" ReplaceContent="TRUE" />
+    <File Path="Lib\o365-icons\Office365Icons.ttf" Url="Lib/o365-icons/Office365Icons.ttf" ReplaceContent="TRUE" />
+    <File Path="Lib\o365-icons\Office365Icons.woff" Url="Lib/o365-icons/Office365Icons.woff" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\HELP-US-OUT.txt" Url="Lib/font-awsome-4.5.0/HELP-US-OUT.txt" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\css\font-awesome.css" Url="Lib/font-awsome-4.5.0/css/font-awesome.css" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\css\font-awesome.min.css" Url="Lib/font-awsome-4.5.0/css/font-awesome.min.css" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\fonts\fontawesome-webfont.eot" Url="Lib/font-awsome-4.5.0/fonts/fontawesome-webfont.eot" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\fonts\fontawesome-webfont.svg" Url="Lib/font-awsome-4.5.0/fonts/fontawesome-webfont.svg" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\fonts\fontawesome-webfont.ttf" Url="Lib/font-awsome-4.5.0/fonts/fontawesome-webfont.ttf" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\fonts\fontawesome-webfont.woff" Url="Lib/font-awsome-4.5.0/fonts/fontawesome-webfont.woff" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\fonts\fontawesome-webfont.woff2" Url="Lib/font-awsome-4.5.0/fonts/fontawesome-webfont.woff2" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\fonts\FontAwesome.otf" Url="Lib/font-awsome-4.5.0/fonts/FontAwesome.otf" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\less\animated.less" Url="Lib/font-awsome-4.5.0/less/animated.less" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\less\bordered-pulled.less" Url="Lib/font-awsome-4.5.0/less/bordered-pulled.less" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\less\core.less" Url="Lib/font-awsome-4.5.0/less/core.less" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\less\fixed-width.less" Url="Lib/font-awsome-4.5.0/less/fixed-width.less" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\less\font-awesome.less" Url="Lib/font-awsome-4.5.0/less/font-awesome.less" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\less\icons.less" Url="Lib/font-awsome-4.5.0/less/icons.less" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\less\larger.less" Url="Lib/font-awsome-4.5.0/less/larger.less" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\less\list.less" Url="Lib/font-awsome-4.5.0/less/list.less" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\less\mixins.less" Url="Lib/font-awsome-4.5.0/less/mixins.less" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\less\path.less" Url="Lib/font-awsome-4.5.0/less/path.less" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\less\rotated-flipped.less" Url="Lib/font-awsome-4.5.0/less/rotated-flipped.less" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\less\stacked.less" Url="Lib/font-awsome-4.5.0/less/stacked.less" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\less\variables.less" Url="Lib/font-awsome-4.5.0/less/variables.less" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\scss\_animated.scss" Url="Lib/font-awsome-4.5.0/scss/_animated.scss" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\scss\_bordered-pulled.scss" Url="Lib/font-awsome-4.5.0/scss/_bordered-pulled.scss" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\scss\_core.scss" Url="Lib/font-awsome-4.5.0/scss/_core.scss" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\scss\_fixed-width.scss" Url="Lib/font-awsome-4.5.0/scss/_fixed-width.scss" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\scss\_icons.scss" Url="Lib/font-awsome-4.5.0/scss/_icons.scss" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\scss\_larger.scss" Url="Lib/font-awsome-4.5.0/scss/_larger.scss" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\scss\_list.scss" Url="Lib/font-awsome-4.5.0/scss/_list.scss" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\scss\_mixins.scss" Url="Lib/font-awsome-4.5.0/scss/_mixins.scss" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\scss\_path.scss" Url="Lib/font-awsome-4.5.0/scss/_path.scss" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\scss\_rotated-flipped.scss" Url="Lib/font-awsome-4.5.0/scss/_rotated-flipped.scss" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\scss\_stacked.scss" Url="Lib/font-awsome-4.5.0/scss/_stacked.scss" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\scss\_variables.scss" Url="Lib/font-awsome-4.5.0/scss/_variables.scss" ReplaceContent="TRUE" />
+    <File Path="Lib\font-awsome-4.5.0\scss\font-awesome.scss" Url="Lib/font-awsome-4.5.0/scss/font-awesome.scss" ReplaceContent="TRUE" />
+    <File Path="Lib\angular-1.4.8\angular.js" Url="Lib/angular-1.4.8/angular.js" ReplaceContent="TRUE" />
+    <File Path="Lib\angular-1.4.8\angular.min.js" Url="Lib/angular-1.4.8/angular.min.js" ReplaceContent="TRUE" />
+    <File Path="Lib\angular-1.4.8\angular-route.js" Url="Lib/angular-1.4.8/angular-route.js" ReplaceContent="TRUE" />
+    <File Path="Lib\jquery-1.11.3\jquery-1.11.3.js" Url="Lib/jquery-1.11.3/jquery-1.11.3.js" ReplaceContent="TRUE" />
+    <File Path="Lib\jquery-1.11.3\jquery-1.11.3.min.js" Url="Lib/jquery-1.11.3/jquery-1.11.3.min.js" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

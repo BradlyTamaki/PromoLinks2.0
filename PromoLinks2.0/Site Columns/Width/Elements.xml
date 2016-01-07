@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{3ba84e73-078b-4947-b57f-8999412fc7f7}"
+       Name="Width"
+       StaticName="Width"
+       DisplayName="Tile Width"
+       Type="Number"
+       Decimals="0"
+       Required="FALSE"
+       Group="Custom Site Columns">
+    <Default>150</Default>
+  </Field>
+</Elements>

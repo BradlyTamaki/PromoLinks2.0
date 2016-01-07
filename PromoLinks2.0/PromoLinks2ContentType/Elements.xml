@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100FDCF08B800AC42B183C14FB9A2817E70" Name="PromoLinks2ContentType" Group="Custom Content Types" Description="" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="$Resources:core,Title;" Name="LinkTitle" ReadOnly="TRUE" />
+      <FieldRef ID="{d6d8309e-f4a5-45a6-8153-2baf33dfe56f}" DisplayName="Description" Required="FALSE" Name="Description" NumLines="4" />
+      <FieldRef ID="{95c3f22f-92b1-45da-bab8-1b6091cd2550}" DisplayName="Background Image Type" Required="TRUE" Name="BackgroundImageType" Format="Dropdown" />
+      <FieldRef ID="{6d4cc689-dcc6-4563-baa2-632fa3d99496}" DisplayName="Background Image" Required="FALSE" Name="BackgroundImage" Format="Image" />
+      <FieldRef ID="{eb7bcff9-487d-4999-97be-6cb63f73546d}" DisplayName="Icon Path" Required="FALSE" Name="IconPath" />
+      <FieldRef ID="{6847bda1-7973-4add-b5d2-0fab8e54e290}" DisplayName="Icon Size" Required="FALSE" Name="IconSize" />
+      <FieldRef ID="{7631a0c7-0eed-4044-bb6a-062319df840d}" DisplayName="Icon Color" Required="FALSE" Name="IconColor" />
+      <FieldRef ID="{02ad251a-7076-4c18-b5f8-7466a98749b0}" DisplayName="Background Color" Required="FALSE" Name="BackgroundColor" />
+      <FieldRef ID="{c0efb34b-38d4-4b6c-aebe-ff117f73cb54}" DisplayName="Link Location" Required="FALSE" Name="LinkLocation" />
+      <FieldRef ID="{3ba84e73-078b-4947-b57f-8999412fc7f7}" DisplayName="Tile Width" Required="FALSE" Name="Width" />
+      <FieldRef ID="{7929f1c1-0db5-4b46-9626-0a10fc58c5fb}" DisplayName="Tile Height" Required="FALSE" Name="Height" />
+      <FieldRef ID="{c0e92db5-03e6-4164-81a5-b20c31881693}" DisplayName="Launch Behavior" Required="FALSE" Name="LaunchBehavior" Format="Dropdown" />
+      <FieldRef ID="{58091853-c97f-464c-86aa-92f4daf70a36}" DisplayName="Order" Required="FALSE" Name="TileOrder" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

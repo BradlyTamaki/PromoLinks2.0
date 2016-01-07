@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{7929f1c1-0db5-4b46-9626-0a10fc58c5fb}"
+       Name="Height"
+       StaticName="Height"
+       DisplayName="Tile Height"
+       Type="Number"
+       Decimals="0"
+       Required="FALSE"
+       Group="Custom Site Columns">
+    <Default>150</Default>
+  </Field>
+</Elements>

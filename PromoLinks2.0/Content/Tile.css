@@ -1,0 +1,67 @@
+﻿#webpartMain {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+/* PLitem */
+.PLItem {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+    border: 0;
+}
+.PLItem {
+    margin: 0 8px 10px 0;
+}
+/* overlay */
+.PLOverlay {
+    padding: 2.5% 2.5%;
+    position: absolute;
+    top: 60%;
+    height: 200%;
+    background: rgba(0,0,0,.6);
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: left;
+    transition: top, bottom;
+    transition-duration: 0.4s;
+    -webkit-transition-property: top, bottom;
+    -webkit-transition-duration: 0.4s;
+    font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+}
+/* Title */
+.PLItem .PLTitle {
+    margin-bottom: 4%;
+}
+/* Description */
+.PLItem .PLDescription {
+    display: none; 
+}
+/* Icon type */
+.PLIcon {
+    display: inline-table;
+    vertical-align: top;
+    text-align: center;
+}
+.PLIcon:before {
+    display: table-cell;
+    vertical-align: middle;
+}
+/* Img type */
+.PLImg > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+/* hover css */
+.PLItem:hover > div {
+    top: 0 !important;
+}
+.PLItem:hover .PLDescription {
+    display: inline;
+}

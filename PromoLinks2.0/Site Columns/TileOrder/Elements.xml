@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{58091853-c97f-464c-86aa-92f4daf70a36}"
+       Name="TileOrder"
+       StaticName="TileOrder"
+       DisplayName="Order"
+       Type="Number"
+       Decimals="0"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

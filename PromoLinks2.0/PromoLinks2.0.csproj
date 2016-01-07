@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{884C7FD8-2FD0-4623-83D1-E97DC3D4C659}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PromoLinks2._0</RootNamespace>
+    <AssemblyName>PromoLinks2.0</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.1</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>12.2</MinimumOfficeToolsVersion>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{71442f91-defe-429a-b293-7580a950b74c}</AppFeaturePartId>
+    <WspPartId>{695bd485-1ea8-44fa-83a3-83dcab14c93b}</WspPartId>
+    <WorkflowPartId>{15e2a46c-9449-4f32-8ba6-1df7da6d2fff}</WorkflowPartId>
+    <CspkgPartId>{d683c0ff-947e-4443-8638-83e0435553af}</CspkgPartId>
+    <SqlPackagePartId>{1641c836-9666-41e1-94b2-b64328e3faa3}</SqlPackagePartId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Content\Tile.css" />
+    <Content Include="Elements.xml" />
+    <Content Include="Lib\angular-1.4.8\angular-route.js" />
+    <Content Include="Lib\angular-1.4.8\angular.js" />
+    <Content Include="Lib\angular-1.4.8\angular.min.js" />
+    <Content Include="Lib\Elements.xml" />
+    <Content Include="Lib\font-awsome-4.5.0\css\font-awesome.css" />
+    <Content Include="Lib\font-awsome-4.5.0\css\font-awesome.min.css" />
+    <Content Include="Lib\jquery-1.11.3\jquery-1.11.3.min.js" />
+    <Content Include="Lib\o365-icons\o365-icons.css" />
+    <Content Include="Lib\font-awsome-4.5.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Lib\font-awsome-4.5.0\HELP-US-OUT.txt" />
+    <Content Include="Lib\o365-icons\Office365Icons.svg" />
+    <Content Include="Pages\Icons.aspx" />
+    <Content Include="Pages\PromoLinks2Webpart.aspx" />
+    <Content Include="PromoLinks2ContentType\Elements.xml" />
+    <Content Include="Lib\jquery-1.11.3\jquery-1.11.3.js" />
+    <Content Include="PromoLinks2Webpart\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Script\newForm.js" />
+    <Content Include="Site Columns\BackgroundColor\Elements.xml" />
+    <Content Include="Site Columns\BackgroundImageType\Elements.xml" />
+    <Content Include="Site Columns\BackgroundImage\Elements.xml" />
+    <Content Include="Site Columns\Description\Elements.xml" />
+    <Content Include="Site Columns\Height\Elements.xml" />
+    <Content Include="Site Columns\IconColor\Elements.xml" />
+    <Content Include="Site Columns\IconPath\Elements.xml" />
+    <Content Include="Site Columns\IconSize\Elements.xml" />
+    <Content Include="Site Columns\LaunchBehavior\Elements.xml" />
+    <Content Include="Site Columns\LinkLocation\Elements.xml" />
+    <Content Include="Site Columns\TileOrder\Elements.xml" />
+    <Content Include="Site Columns\Width\Elements.xml" />
+    <None Include="Lib\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b0c4cc4c-ecc8-41d8-adb2-cae7c22efcc4}</SharePointProjectItemId>
+    </None>
+    <None Include="Lib\font-awsome-4.5.0\fonts\fontawesome-webfont.eot" />
+    <None Include="Lib\font-awsome-4.5.0\fonts\fontawesome-webfont.ttf" />
+    <None Include="Lib\font-awsome-4.5.0\fonts\fontawesome-webfont.woff" />
+    <None Include="Lib\font-awsome-4.5.0\fonts\fontawesome-webfont.woff2" />
+    <None Include="Lib\font-awsome-4.5.0\fonts\FontAwesome.otf" />
+    <None Include="Lib\font-awsome-4.5.0\less\animated.less" />
+    <None Include="Lib\font-awsome-4.5.0\less\bordered-pulled.less" />
+    <None Include="Lib\font-awsome-4.5.0\less\core.less" />
+    <None Include="Lib\font-awsome-4.5.0\less\fixed-width.less" />
+    <None Include="Lib\font-awsome-4.5.0\less\font-awesome.less" />
+    <None Include="Lib\font-awsome-4.5.0\less\icons.less" />
+    <None Include="Lib\font-awsome-4.5.0\less\larger.less" />
+    <None Include="Lib\font-awsome-4.5.0\less\list.less" />
+    <None Include="Lib\font-awsome-4.5.0\less\mixins.less" />
+    <None Include="Lib\font-awsome-4.5.0\less\path.less" />
+    <None Include="Lib\font-awsome-4.5.0\less\rotated-flipped.less" />
+    <None Include="Lib\font-awsome-4.5.0\less\stacked.less" />
+    <None Include="Lib\font-awsome-4.5.0\less\variables.less" />
+    <None Include="Lib\font-awsome-4.5.0\scss\font-awesome.scss" />
+    <None Include="Lib\font-awsome-4.5.0\scss\_animated.scss" />
+    <None Include="Lib\font-awsome-4.5.0\scss\_bordered-pulled.scss" />
+    <None Include="Lib\font-awsome-4.5.0\scss\_core.scss" />
+    <None Include="Lib\font-awsome-4.5.0\scss\_fixed-width.scss" />
+    <None Include="Lib\font-awsome-4.5.0\scss\_icons.scss" />
+    <None Include="Lib\font-awsome-4.5.0\scss\_larger.scss" />
+    <None Include="Lib\font-awsome-4.5.0\scss\_list.scss" />
+    <None Include="Lib\font-awsome-4.5.0\scss\_mixins.scss" />
+    <None Include="Lib\font-awsome-4.5.0\scss\_path.scss" />
+    <None Include="Lib\font-awsome-4.5.0\scss\_rotated-flipped.scss" />
+    <None Include="Lib\font-awsome-4.5.0\scss\_stacked.scss" />
+    <None Include="Lib\font-awsome-4.5.0\scss\_variables.scss" />
+    <Content Include="Lib\icon-list.json.txt" />
+    <None Include="Lib\o365-icons\Office365Icons.eot" />
+    <None Include="Lib\o365-icons\Office365Icons.ttf" />
+    <None Include="Lib\o365-icons\Office365Icons.woff" />
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d9a5ce2e-ace1-4c24-9f30-bf778b224f43}</SharePointProjectItemId>
+    </None>
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Default.aspx" />
+    <None Include="PromoLinks2ContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fdb4eb14-d746-4465-bc62-2f746b0b4761}</SharePointProjectItemId>
+    </None>
+    <None Include="PromoLinks2Webpart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{db6a665c-5755-4cb4-b137-e1c13f59e1bc}</SharePointProjectItemId>
+    </None>
+    <None Include="SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6f4a62a0-8719-47e5-aa42-0c1ff9b3f269}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\BackgroundColor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6f471213-fbd5-4475-94de-97c71deb889a}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\BackgroundImageType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{60f04194-c591-48e6-bbf2-5a8f56332f38}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\BackgroundImage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{241f270b-495b-417b-a0eb-2f1155c67337}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Description\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e36ea4a0-cfff-4ebb-b02b-28542c5867ca}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Height\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{998e7cff-4202-4890-bf4b-b3acf75df10c}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\IconColor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1276f986-171f-4a58-975a-acc483c87827}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\IconPath\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5c90ce86-8fc0-488c-9574-04e77dc68c45}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\IconSize\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a3ce5d7c-b0a9-47ca-be07-e0f9aa56391f}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\LaunchBehavior\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f212d425-472a-4f19-be1a-9d6918fb3438}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\LinkLocation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a9af2810-a2d1-464b-afaa-c497aeb63fa1}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\TileOrder\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4ff67124-c9aa-4609-990e-857e0c9dca25}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Width\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f4a6c74a-f665-45a1-8928-e3e33f17bd7c}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PromotedLinks2\PromotedLinks2Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8441fbe8-d0ae-4fcc-b77f-61f1a645af46}</SharePointProjectItemId>
+    </None>
+    <None Include="PromotedLinks2\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d93d5100-4771-43a4-a46b-f089c5d4d4b3}</SharePointProjectItemId>
+    </None>
+    <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1641c836-9666-41e1-94b2-b64328e3faa3}</SharePointProjectItemId>
+    </None>
+    <Content Include="PromotedLinks2\Elements.xml" />
+    <Content Include="PromotedLinks2\PromotedLinks2Instance\Elements.xml" />
+    <Content Include="PromotedLinks2\Schema.xml" />
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1a382dcc-a960-413c-b56e-9e3120cd97a7}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{66abd923-81bd-45e2-a56c-bd01f0b16bc1}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{197e4d60-a260-4664-ae59-183e33e9aedb}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{88e482c4-803e-426c-bfb1-23aa50d7affa}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions />
+</Project>

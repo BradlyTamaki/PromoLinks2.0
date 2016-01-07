@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Lib\" Type="ElementManifest" />
+    <ProjectItemFile Source="icon-list.json.txt" Target="Lib\" Type="ElementFile" />
+    <ProjectItemFile Source="o365-icons\o365-icons.css" Target="Lib\o365-icons\" Type="ElementFile" />
+    <ProjectItemFile Source="o365-icons\Office365Icons.eot" Target="Lib\o365-icons\" Type="ElementFile" />
+    <ProjectItemFile Source="o365-icons\Office365Icons.svg" Target="Lib\o365-icons\" Type="ElementFile" />
+    <ProjectItemFile Source="o365-icons\Office365Icons.ttf" Target="Lib\o365-icons\" Type="ElementFile" />
+    <ProjectItemFile Source="o365-icons\Office365Icons.woff" Target="Lib\o365-icons\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\HELP-US-OUT.txt" Target="Lib\font-awsome-4.5.0\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\css\font-awesome.css" Target="Lib\font-awsome-4.5.0\css\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\css\font-awesome.min.css" Target="Lib\font-awsome-4.5.0\css\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\fonts\fontawesome-webfont.eot" Target="Lib\font-awsome-4.5.0\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\fonts\fontawesome-webfont.svg" Target="Lib\font-awsome-4.5.0\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\fonts\fontawesome-webfont.ttf" Target="Lib\font-awsome-4.5.0\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\fonts\fontawesome-webfont.woff" Target="Lib\font-awsome-4.5.0\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\fonts\fontawesome-webfont.woff2" Target="Lib\font-awsome-4.5.0\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\fonts\FontAwesome.otf" Target="Lib\font-awsome-4.5.0\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\less\animated.less" Target="Lib\font-awsome-4.5.0\less\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\less\bordered-pulled.less" Target="Lib\font-awsome-4.5.0\less\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\less\core.less" Target="Lib\font-awsome-4.5.0\less\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\less\fixed-width.less" Target="Lib\font-awsome-4.5.0\less\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\less\font-awesome.less" Target="Lib\font-awsome-4.5.0\less\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\less\icons.less" Target="Lib\font-awsome-4.5.0\less\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\less\larger.less" Target="Lib\font-awsome-4.5.0\less\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\less\list.less" Target="Lib\font-awsome-4.5.0\less\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\less\mixins.less" Target="Lib\font-awsome-4.5.0\less\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\less\path.less" Target="Lib\font-awsome-4.5.0\less\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\less\rotated-flipped.less" Target="Lib\font-awsome-4.5.0\less\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\less\stacked.less" Target="Lib\font-awsome-4.5.0\less\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\less\variables.less" Target="Lib\font-awsome-4.5.0\less\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\scss\_animated.scss" Target="Lib\font-awsome-4.5.0\scss\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\scss\_bordered-pulled.scss" Target="Lib\font-awsome-4.5.0\scss\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\scss\_core.scss" Target="Lib\font-awsome-4.5.0\scss\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\scss\_fixed-width.scss" Target="Lib\font-awsome-4.5.0\scss\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\scss\_icons.scss" Target="Lib\font-awsome-4.5.0\scss\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\scss\_larger.scss" Target="Lib\font-awsome-4.5.0\scss\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\scss\_list.scss" Target="Lib\font-awsome-4.5.0\scss\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\scss\_mixins.scss" Target="Lib\font-awsome-4.5.0\scss\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\scss\_path.scss" Target="Lib\font-awsome-4.5.0\scss\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\scss\_rotated-flipped.scss" Target="Lib\font-awsome-4.5.0\scss\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\scss\_stacked.scss" Target="Lib\font-awsome-4.5.0\scss\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\scss\_variables.scss" Target="Lib\font-awsome-4.5.0\scss\" Type="ElementFile" />
+    <ProjectItemFile Source="font-awsome-4.5.0\scss\font-awesome.scss" Target="Lib\font-awsome-4.5.0\scss\" Type="ElementFile" />
+    <ProjectItemFile Source="angular-1.4.8\angular.js" Target="Lib\angular-1.4.8\" Type="ElementFile" />
+    <ProjectItemFile Source="angular-1.4.8\angular.min.js" Target="Lib\angular-1.4.8\" Type="ElementFile" />
+    <ProjectItemFile Source="angular-1.4.8\angular-route.js" Target="Lib\angular-1.4.8\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.11.3\jquery-1.11.3.js" Target="Lib\jquery-1.11.3\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.11.3\jquery-1.11.3.min.js" Target="Lib\jquery-1.11.3\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

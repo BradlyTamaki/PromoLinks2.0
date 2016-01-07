@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{02ad251a-7076-4c18-b5f8-7466a98749b0}"
+       Name="BackgroundColor"
+       DisplayName="Background Color"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+    <Default>#0072c6</Default>
+  </Field>
+</Elements>

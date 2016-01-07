@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{c0e92db5-03e6-4164-81a5-b20c31881693}"
+       Name="LaunchBehavior"
+       StaticName="LaunchBehavior"
+       DisplayName="Launch Behavior"
+       Description="How would you like to open this link?
+-In page navigation: This will open the link in the current page.
+-Dialog: This will open the link in a popup window.
+-New Tab: This will open the link in a new tab."
+       Type="Choice"
+       Format="Dropdown"
+       Required="FALSE"
+       Group="Custom Site Columns">
+    <Default>In page navigation</Default>
+    <CHOICES>
+      <CHOICE>In page navigation</CHOICE>
+      <CHOICE>Dialog</CHOICE>
+      <CHOICE>New Tab</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

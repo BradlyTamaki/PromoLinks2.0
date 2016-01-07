@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{c0efb34b-38d4-4b6c-aebe-ff117f73cb54}"
+       Name="LinkLocation"
+       StaticName="LinkLocation"
+       DisplayName="Link Location"
+       Type="URL"
+       Required="True"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

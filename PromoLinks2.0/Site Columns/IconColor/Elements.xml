@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{7631a0c7-0eed-4044-bb6a-062319df840d}"
+       Name="IconColor"
+       DisplayName="Icon Color"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+    <Default>#FFFFFF</Default>
+  </Field>
+</Elements>

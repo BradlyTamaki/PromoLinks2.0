@@ -1,0 +1,41 @@
+﻿/* Place custom styles below */
+#onetIDListForm { display: inline-table; vertical-align: top }
+#formAside {
+    display: inline-table;
+    vertical-align: top;
+    margin-left: 17px;
+    width: 600px;
+}
+
+
+/* containerBox */
+.containerBox {
+    padding: 0 13px;
+    margin-bottom: 10px;
+    background: #EEE;
+    border: 4px solid #DDD;
+}
+.containerBox > h2 {
+    text-align: left;
+    padding: 5px 0 5px;
+    border-bottom: 4px solid #ddd;
+    margin-bottom: 10px;
+}
+/* previewBox*/
+#previewBox > div {
+    max-width: 566px;
+    text-align: center;
+}
+
+/* iconPicker */
+#iconPicker > div { max-width: 566px;}
+#iconPicker i {
+    padding: 5px;
+}
+
+#iconPicker i:hover {
+    background-color: #FFF;
+}
+#iconPicker i.selected {
+    background-color: #FFF;
+}

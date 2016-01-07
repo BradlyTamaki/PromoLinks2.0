@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{95c3f22f-92b1-45da-bab8-1b6091cd2550}"
+       Name="BackgroundImageType"
+       StaticName="BackgroundImageType"
+       DisplayName="Background Image Type"
+       Type="Choice"
+       Format="Dropdown"
+       Required="TRUE"
+       Group="Custom Site Columns">
+    <Default>Icon</Default>
+    <CHOICES>
+      <CHOICE>Icon</CHOICE>
+      <CHOICE>Image</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

@@ -1,0 +1,927 @@
+@font-face {
+	font-family:SPO365Icons;
+	src:url('Office365Icons.eot');
+	src:url('Office365Icons.eot?#iefix') format('embedded-opentype'),
+		url('Office365Icons.woff') format('woff'),
+		url('Office365Icons.ttf') format('truetype'),
+		url('Office365Icons.svg#web') format('svg');
+	font-style:normal;
+	font-weight:400;
+}
+.o365i {
+    font-family: SPO365Icons;
+	display: inline-block;
+	font: normal normal normal 14px/1 SPO365Icons;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+/* makes the font 33% larger relative to the icon container */
+.o365i-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.o365i-2x {
+  font-size: 2em;
+}
+.o365i-3x {
+  font-size: 3em;
+}
+.o365i-4x {
+  font-size: 4em;
+}
+.o365i-5x {
+  font-size: 5em;
+}
+.o365i-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.o365i-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.o365i-ul > li {
+  position: relative;
+}
+.o365i-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.o365i-li.o365i-lg {
+  left: -1.85714286em;
+}
+.o365i-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.o365i-pull-left {
+  float: left;
+}
+.o365i-pull-right {
+  float: right;
+}
+.o365i.o365i-pull-left {
+  margin-right: .3em;
+}
+.o365i.o365i-pull-right {
+  margin-left: .3em;
+}
+/* Deprecated as of 4.4.0 */
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.o365i.pull-left {
+  margin-right: .3em;
+}
+.o365i.pull-right {
+  margin-left: .3em;
+}
+.o365i-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+.o365i-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.o365i-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.o365i-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.o365i-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.o365i-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.o365i-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+:root .o365i-rotate-90,
+:root .o365i-rotate-180,
+:root .o365i-rotate-270,
+:root .o365i-flip-horizontal,
+:root .o365i-flip-vertical {
+  filter: none;
+}
+.o365i-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.o365i-stack-1x,
+.o365i-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.o365i-stack-1x {
+  line-height: inherit;
+}
+.o365i-stack-2x {
+  font-size: 2em;
+}
+.o365i-inverse {
+  color: #ffffff;
+}
+/* o365 icons uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+.o365i-circle:before {
+	content:"\e000";
+}
+.o365i-circle2:before {
+	content:"\e001";
+}
+.o365i-crossbox:before {
+	content:"\e002";
+}
+.o365i-star:before {
+	content:"\e003";
+}
+.o365i-plus:before {
+	content:"\e004";
+}
+.o365i-minus:before {
+	content:"\e005";
+}
+.o365i-question:before {
+	content:"\e006";
+}
+.o365i-exclamation:before {
+	content:"\e007";
+}
+.o365i-person:before {
+	content:"\e008";
+}
+.o365i-mail:before {
+	content:"\e009";
+}
+.o365i-info:before {
+	content:"\e00a";
+}
+.o365i-warning:before {
+	content:"\e00b";
+}
+.o365i-critical:before {
+	content:"\e00c";
+}
+.o365i-mailopened:before {
+	content:"\e00d";
+}
+.o365i-people:before {
+	content:"\e00e";
+}
+.o365i-notification:before {
+	content:"\e010";
+}
+.o365i-calendar:before {
+	content:"\e011";
+}
+.o365i-calendarclockitem:before {
+	content:"\e012";
+}
+.o365i-calendaritem:before {
+	content:"\e013";
+}
+.o365i-folder:before {
+	content:"\e014";
+}
+.o365i-files:before {
+	content:"\e015";
+}
+.o365i-onedrive:before {
+	content:"\e016";
+}
+.o365i-comment:before {
+	content:"\e017";
+}
+.o365i-exit:before {
+	content:"\e018";
+}
+.o365i-menu:before {
+	content:"\e019";
+}
+.o365i-week:before {
+	content:"\e01a";
+}
+.o365i-weekday:before {
+	content:"\e01b";
+}
+.o365i-day:before {
+	content:"\e01c";
+}
+.o365i-fowardfolder:before {
+	content:"\e01d";
+}
+.o365i-windowdock:before {
+	content:"\e01e";
+}
+.o365i-windowseparate:before {
+	content:"\e01f";
+}
+.o365i-hamburger:before {
+	content:"\e020";
+}
+.o365i-home:before {
+	content:"\e021";
+}
+.o365i-webfav:before {
+	content:"\e022";
+}
+.o365i-phone:before {
+	content:"\e023";
+}
+.o365i-email:before {
+	content:"\e024";
+}
+.o365i-save:before {
+	content:"\e025";
+}
+.o365i-delete:before {
+	content:"\e026";
+}
+.o365i-edit:before {
+	content:"\e027";
+}
+.o365i-flag:before {
+	content:"\e028";
+}
+.o365i-reply:before {
+	content:"\e029";
+}
+.o365i-tiles:before {
+	content:"\e02a";
+}
+.o365i-voicemail:before {
+	content:"\e02b";
+}
+.o365i-play:before {
+	content:"\e02c";
+}
+.o365i-pause:before {
+	content:"\e02d";
+}
+.o365i-webadd:before {
+	content:"\e02e";
+}
+.o365i-webperson:before {
+	content:"\e02f";
+}
+.o365i-replyall:before {
+	content:"\e030";
+}
+.o365i-attachment:before {
+	content:"\e031";
+}
+.o365i-donotenter:before {
+	content:"\e032";
+}
+.o365i-pin:before {
+	content:"\e033";
+}
+.o365i-refresh:before {
+	content:"\e034";
+}
+.o365i-gear:before {
+	content:"\e035";
+}
+.o365i-smile:before {
+	content:"\e036";
+}
+.o365i-i:before {
+	content:"\e037";
+}
+.o365i-lock:before {
+	content:"\e038";
+}
+.o365i-magnifiyingglass:before {
+	content:"\e039";
+}
+.o365i-norefresh:before {
+	content:"\e03b";
+}
+.o365i-tasks:before {
+	content:"\e040";
+}
+.o365i-check:before {
+	content:"\e041";
+}
+.o365i-x:before {
+	content:"\e042";
+}
+.o365i-unlike:before {
+	content:"\e043";
+}
+.o365i-like:before {
+	content:"\e044";
+}
+.o365i-ellipses:before {
+	content:"\e045";
+}
+.o365i-bullet:before {
+	content:"\e046";
+}
+.o365i-up:before {
+	content:"\e047";
+}
+.o365i-down:before {
+	content:"\e048";
+}
+.o365i-left:before {
+	content:"\e049";
+}
+.o365i-right:before {
+	content:"\e04a";
+}
+.o365i-downunderline:before {
+	content:"\e04b";
+}
+.o365i-rightturn:before {
+	content:"\e04c";
+}
+.o365i-microphone:before {
+	content:"\e04f";
+}
+.o365i-up2:before {
+	content:"\e051";
+}
+.o365i-down2:before {
+	content:"\e052";
+}
+.o365i-left2:before {
+	content:"\e053";
+}
+.o365i-right2:before {
+	content:"\e054";
+}
+.o365i-office:before {
+	content:"\e055";
+}
+.o365i-office365:before {
+	content:"\e056";
+}
+.o365i-office365preview:before {
+	content:"\e057";
+}
+.o365i-topleft:before {
+	content:"\e05a";
+}
+.o365i-topright:before {
+	content:"\e05b";
+}
+.o365i-bottomright:before {
+	content:"\e05c";
+}
+.o365i-bottomleft:before {
+	content:"\e05d";
+}
+.o365i-app:before {
+	content:"\e060";
+}
+.o365i-officestore:before {
+	content:"\e061";
+}
+.o365i-outlook:before {
+	content:"\e062";
+}
+.o365i-\e063:before {
+	content:"\e063";
+}
+.o365i-yammer:before {
+	content:"\e064";
+}
+.o365i-\e065:before {
+	content:"\e065";
+}
+.o365i-lync:before {
+	content:"\e066";
+}
+.o365i-postit:before {
+	content:"\e06a";
+}
+.o365i-postitleftarrow:before {
+	content:"\e06b";
+}
+.o365i-postitrightarrow:before {
+	content:"\e06c";
+}
+.o365i-key:before {
+	content:"\e06f";
+}
+.o365i-carousel:before {
+	content:"\e070";
+}
+.o365i-checkboxrefresh:before {
+	content:"\e071";
+}
+.o365i-sharepoint:before {
+	content:"\e072";
+}
+.o365i-unstar:before {
+	content:"\e073";
+}
+.o365i-topunderline:before {
+	content:"\e076";
+}
+.o365i-wrench:before {
+	content:"\e077";
+}
+.o365i-share:before {
+	content:"\e078";
+}
+.o365i-fileleftarrow:before {
+	content:"\e079";
+}
+.o365i-filerightarrow:before {
+	content:"\e07a";
+}
+.o365i-personaward:before {
+	content:"\e080";
+}
+.o365i-gearwrench:before {
+	content:"\e081";
+}
+.o365i-microsoft:before {
+	content:"\e083";
+}
+.o365i-uturn:before {
+	content:"\e084";
+}
+.o365i-updown:before {
+	content:"\e085";
+}
+.o365i-personadd:before {
+	content:"\e086";
+}
+.o365i-up3:before {
+	content:"\e087";
+}
+.o365i-down3:before {
+	content:"\e088";
+}
+.o365i-left3:before {
+	content:"\e089";
+}
+.o365i-right3:before {
+	content:"\e08a";
+}
+.o365i-graph:before {
+	content:"\e08b";
+}
+.o365i-peopleadd:before {
+	content:"\e08c";
+}
+.o365i-newsfeed:before {
+	content:"\e08d";
+}
+.o365i-notebook:before {
+	content:"\e08e";
+}
+.o365i-link:before {
+	content:"\e08f";
+}
+.o365i-up4:before {
+	content:"\e090";
+}
+.o365i-down4:before {
+	content:"\e091";
+}
+.o365i-left4:before {
+	content:"\e092";
+}
+.o365i-right4:before {
+	content:"\e093";
+}
+.o365i-broom:before {
+	content:"\e09a";
+}
+.o365i-filetraydown:before {
+	content:"\e09c";
+}
+.o365i-filetrayx:before {
+	content:"\e09d";
+}
+.o365i-personx:before {
+	content:"\e09e";
+}
+.o365i-rightarrowlist:before {
+	content:"\e0a0";
+}
+.o365i-leftarrowlist:before {
+	content:"\e0a1";
+}
+.o365i-checklist:before {
+	content:"\e0a2";
+}
+.o365i-peoplex:before {
+	content:"\e0a3";
+}
+.o365i-arrowinwards:before {
+	content:"\e0a4";
+}
+.o365i-arrowoutwards:before {
+	content:"\e0a5";
+}
+.o365i-calendaritemx:before {
+	content:"\e0a6";
+}
+.o365i-calendaritemarrow:before {
+	content:"\e0a7";
+}
+.o365i-calendaritemdown:before {
+	content:"\e0a9";
+}
+.o365i-doorarrow:before {
+	content:"\e0aa";
+}
+.o365i-voiceleftarrow:before {
+	content:"\e0ac";
+}
+.o365i-voicerightarrow:before {
+	content:"\e0ad";
+}
+.o365i-ribbon:before {
+	content:"\e0af";
+}
+.o365i-contactcard:before {
+	content:"\e0b0";
+}
+.o365i-eye:before {
+	content:"\e0b1";
+}
+.o365i-glasses:before {
+	content:"\e0b2";
+}
+.o365i-office365chinese:before {
+	content:"\e0b3";
+}
+.o365i-access:before {
+	content:"\e0b4";
+}
+.o365i-excel:before {
+	content:"\e0b5";
+}
+.o365i-onenote:before {
+	content:"\e0b7";
+}
+.o365i-powerpoint:before {
+	content:"\e0b8";
+}
+.o365i-word:before {
+	content:"\e0b9";
+}
+.o365i-print:before {
+	content:"\e100";
+}
+.o365i-exit2:before {
+	content:"\e101";
+}
+.o365i-postitpinned:before {
+	content:"\e102";
+}
+.o365i-aside:before {
+	content:"\e103";
+}
+.o365i-pushbutton:before {
+	content:"\e104";
+}
+.o365i-clock:before {
+	content:"\e105";
+}
+.o365i-fax:before {
+	content:"\e106";
+}
+.o365i-event:before {
+	content:"\e110";
+}
+.o365i-numpad:before {
+	content:"\e111";
+}
+.o365i-callarrows:before {
+	content:"\e112";
+}
+.o365i-callplus:before {
+	content:"\e113";
+}
+.o365i-runningman:before {
+	content:"\e114";
+}
+.o365i-commentplus:before {
+	content:"\e115";
+}
+.o365i-arrowinwardstilt:before {
+	content:"\e116";
+}
+.o365i-navigate:before {
+	content:"\e117";
+}
+.o365i-delve:before {
+	content:"\e118";
+}
+.o365i-photo:before {
+	content:"\e119";
+}
+.o365i-filter:before {
+	content:"\e11a";
+}
+.o365i-arrowoutwardstilt:before {
+	content:"\e11b";
+}
+.o365i-shine:before {
+	content:"\e11c";
+}
+.o365i-mail2:before {
+	content:"\e11d";
+}
+.o365i-edit2:before {
+	content:"\e11e";
+}
+.o365i-applauncher:before {
+	content:"\e11f";
+}
+.o365i-building:before {
+	content:"\e120";
+}
+.o365i-calendaritemrefresh:before {
+	content:"\e121";
+}
+.o365i-cart:before {
+	content:"\e122";
+}
+.o365i-commentlinks:before {
+	content:"\e123";
+}
+.o365i-mappin:before {
+	content:"\e124";
+}
+.o365i-orgchart:before {
+	content:"\e125";
+}
+.o365i-geara:before {
+	content:"\e130";
+}
+.o365i-gearc:before {
+	content:"\e131";
+}
+.o365i-geard:before {
+	content:"\e132";
+}
+.o365i-geare:before {
+	content:"\e133";
+}
+.o365i-gearl:before {
+	content:"\e134";
+}
+.o365i-gearm:before {
+	content:"\e135";
+}
+.o365i-gearo:before {
+	content:"\e136";
+}
+.o365i-gearp:before {
+	content:"\e137";
+}
+.o365i-gears:before {
+	content:"\e138";
+}
+.o365i-geary:before {
+	content:"\e139";
+}
+.o365i-arrowleft:before {
+	content:"\e150";
+}
+.o365i-arrowleft2:before {
+	content:"\e152";
+}
+.o365i-calendaritemexlamation:before {
+	content:"\e154";
+}
+.o365i-peoplemultiple:before {
+	content:"\e155";
+}
+.o365i-officelogo:before {
+	content:"\e160";
+}
+.o365i-money:before {
+	content:"\e161";
+}
+.o365i-linegraph:before {
+	content:"\e162";
+}
+.o365i-calendaritemedit:before {
+	content:"\e163";
+}
+.o365i-gauge:before {
+	content:"\e164";
+}
+.o365i-mailedit:before {
+	content:"\e165";
+}
+.o365i-pin2:before {
+	content:"\e167";
+}
+.o365i-onedriveplus:before {
+	content:"\e168";
+}
+.o365i-heart:before {
+	content:"\e16a";
+}
+.o365i-unheart:before {
+	content:"\e16b";
+}
+.o365i-picture:before {
+	content:"\e16c";
+}
+.o365i-cake:before {
+	content:"\e16d";
+}
+.o365i-books:before {
+	content:"\e16e";
+}
+.o365i-graph3:before {
+	content:"\e16f";
+}
+.o365i-video:before {
+	content:"\e170";
+}
+.o365i-soccor:before {
+	content:"\e171";
+}
+.o365i-forkknife:before {
+	content:"\e172";
+}
+.o365i-baloon:before {
+	content:"\e173";
+}
+.o365i-cat:before {
+	content:"\e174";
+}
+.o365i-poodle:before {
+	content:"\e175";
+}
+.o365i-bag:before {
+	content:"\e176";
+}
+.o365i-music:before {
+	content:"\e177";
+}
+.o365i-stopwatch:before {
+	content:"\e178";
+}
+.o365i-coffee:before {
+	content:"\e179";
+}
+.o365i-briefcase:before {
+	content:"\e17a";
+}
+.o365i-pill:before {
+	content:"\e17b";
+}
+.o365i-trophie:before {
+	content:"\e17c";
+}
+.o365i-medic:before {
+	content:"\e17d";
+}
+.o365i-airplane:before {
+	content:"\e17e";
+}
+.o365i-portratelayout:before {
+	content:"\e17f";
+}
+.o365i-car:before {
+	content:"\e180";
+}
+.o365i-dog:before {
+	content:"\e181";
+}
+.o365i-file:before {
+	content:"\e182";
+}
+.o365i-filedotted:before {
+	content:"\e183";
+}
+.o365i-landscapelayout:before {
+	content:"\e184";
+}
+.o365i-font:before {
+	content:"\e185";
+}
+.o365i-inputstring:before {
+	content:"\e186";
+}
+.o365i-inputnumber:before {
+	content:"\e187";
+}
+.o365i-inputdropdown:before {
+	content:"\e188";
+}
+.o365i-radio:before {
+	content:"\e189";
+}
+.o365i-checkbox:before {
+	content:"\e18a";
+}
+.o365i-openbook:before {
+	content:"\e18b";
+}
+.o365i-bold:before {
+	content:"\e18c";
+}
+.o365i-italic:before {
+	content:"\e18d";
+}
+.o365i-underline:before {
+	content:"\e18e";
+}
+.o365i-quotes:before {
+	content:"\e18f";
+}
+.o365i-editfont:before {
+	content:"\e190";
+}
+.o365i-pictureplus:before {
+	content:"\e191";
+}
+.o365i-pictureminus:before {
+	content:"\e192";
+}
+.o365i-computer:before {
+	content:"\e193";
+}
+.o365i-tablet:before {
+	content:"\e194";
+}
+.o365i-mobile:before {
+	content:"\e195";
+}
+.o365i-calendar2:before {
+	content:"\e196";
+}
+.o365i-eyecrossedout:before {
+	content:"\e197";
+}
+.o365i-sheild:before {
+	content:"\e198";
+}
+.o365i-skype:before {
+	content:"\e199";
+}
+.o365i-h1:before {
+	content:"\e19a";
+}
+.o365i-paint:before {
+	content:"\e19b";
+}

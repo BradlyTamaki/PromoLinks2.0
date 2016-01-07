@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Promoted Links 2.0" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/PromotedLinks2.0" Description="">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Rocket</Field>
+          <Field Name="Description">This is an amazing rocket! Please visit us.</Field>
+          <Field Name="BackgroundImageType">Icon</Field>
+          <Field Name="IconPath">fa-rocket</Field>
+          <Field Name="IconColor">#000000</Field>
+          <Field Name="BackgroundColor">#8c8ff7</Field>
+          <Field Name="LinkLocation">https://google.com/</Field>
+          <Field Name="TileOrder">1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Fighters</Field>
+          <Field Name="Description">We have fighters too!</Field>
+          <Field Name="BackgroundImageType">Icon</Field>
+          <Field Name="IconPath">fa-fighter-jet</Field>
+          <Field Name="IconSize">120</Field>
+          <Field Name="IconColor">#000000</Field>
+          <Field Name="BackgroundColor">#7df04d</Field>
+          <Field Name="LinkLocation">/</Field>
+          <Field Name="LaunchBehavior">New Tab</Field>
+          <Field Name="TileOrder">2</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Smaller Icons (empty description)</Field>
+          <Field Name="Description"></Field>
+          <Field Name="BackgroundImageType">Icon</Field>
+          <Field Name="IconPath">fa-fort-awesome</Field>
+          <Field Name="IconSize">40</Field>
+          <Field Name="IconColor">#ffffff</Field>
+          <Field Name="BackgroundColor">#c4fffe</Field>
+          <Field Name="LinkLocation">/</Field>
+          <Field Name="Width">100</Field>
+          <Field Name="Height">100</Field>
+          <Field Name="LaunchBehavior">Dialog</Field>
+          <Field Name="TileOrder">3</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Pie Charts!!!!!</Field>
+          <Field Name="Description">I perfer cakes</Field>
+          <Field Name="BackgroundImageType">Icon</Field>
+          <Field Name="IconPath">fa-pie-chart</Field>
+          <Field Name="IconColor">#000000</Field>
+          <Field Name="BackgroundColor">#8c8ff7</Field>
+          <Field Name="LinkLocation">/</Field>
+          <Field Name="Width">90</Field>
+          <Field Name="Height">200</Field>
+          <Field Name="TileOrder">4</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Pie Charts!!!!!</Field>
+          <Field Name="Description">I perfer cakes</Field>
+          <Field Name="BackgroundImageType">Icon</Field>
+          <Field Name="IconPath">o365i-powerpoint</Field>
+          <Field Name="IconSize">150</Field>
+          <Field Name="IconColor">#000000</Field>
+          <Field Name="BackgroundColor">#8c8ff7</Field>
+          <Field Name="LinkLocation">/</Field>
+          <Field Name="Width">200</Field>
+          <Field Name="Height">200</Field>
+          <Field Name="TileOrder">5</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

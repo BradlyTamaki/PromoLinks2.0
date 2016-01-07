@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{6d4cc689-dcc6-4563-baa2-632fa3d99496}"
+       Name="BackgroundImage"
+       StaticName="BackgroundImage"
+       DisplayName="Background Image"
+       Description="Although not restricted, it is suggested to use a .png file for the image.
+.png files usually have transparent backgrounds and you are able to configure the background color with this app."
+       Type="URL"
+       Format="Image"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

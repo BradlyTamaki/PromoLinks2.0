@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{6847bda1-7973-4add-b5d2-0fab8e54e290}"
+       Name="IconSize"
+       StaticName="IconSize"
+       DisplayName="Icon Size"
+       Type="Number"
+       Decimals="0"
+       Required="FALSE"
+       Group="Custom Site Columns">
+    <Default>100</Default>
+  </Field>
+</Elements>
