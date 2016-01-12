@@ -45,12 +45,27 @@
   <ItemGroup>
     <Content Include="Content\Tile.css" />
     <Content Include="Elements.xml" />
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
     <Content Include="Lib\angular-1.4.8\angular-route.js" />
     <Content Include="Lib\angular-1.4.8\angular.js" />
     <Content Include="Lib\angular-1.4.8\angular.min.js" />
+    <Content Include="Lib\bootstrap-3.3.6\css\bootstrap-glyphicons-only.css" />
+    <Content Include="Lib\bootstrap-3.3.6\css\bootstrap-theme.css" />
+    <Content Include="Lib\bootstrap-3.3.6\css\bootstrap-theme.min.css" />
+    <Content Include="Lib\bootstrap-3.3.6\css\bootstrap.css" />
+    <Content Include="Lib\bootstrap-3.3.6\css\bootstrap.min.css" />
+    <Content Include="Lib\bootstrap-3.3.6\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Lib\bootstrap-3.3.6\js\bootstrap.js" />
+    <Content Include="Lib\bootstrap-3.3.6\js\bootstrap.min.js" />
+    <Content Include="Lib\bootstrap-3.3.6\js\npm.js" />
     <Content Include="Lib\Elements.xml" />
     <Content Include="Lib\font-awsome-4.5.0\css\font-awesome.css" />
     <Content Include="Lib\font-awsome-4.5.0\css\font-awesome.min.css" />
+    <Content Include="Lib\ionicons-2.0.1\css\ionicons.css" />
+    <Content Include="Lib\ionicons-2.0.1\css\ionicons.min.css" />
+    <Content Include="Lib\ionicons-2.0.1\fonts\ionicons.svg" />
     <Content Include="Lib\jquery-1.11.3\jquery-1.11.3.min.js" />
     <Content Include="Lib\o365-icons\o365-icons.css" />
     <Content Include="Lib\font-awsome-4.5.0\fonts\fontawesome-webfont.svg" />
@@ -65,6 +80,10 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Script\newForm.js" />
+    <Content Include="SettingsContentType\Elements.xml" />
+    <Content Include="Settings\Elements.xml" />
+    <Content Include="Settings\Schema.xml" />
+    <Content Include="Settings\SettingsInstance\Elements.xml" />
     <Content Include="Site Columns\BackgroundColor\Elements.xml" />
     <Content Include="Site Columns\BackgroundImageType\Elements.xml" />
     <Content Include="Site Columns\BackgroundImage\Elements.xml" />
@@ -77,6 +96,22 @@
     <Content Include="Site Columns\LinkLocation\Elements.xml" />
     <Content Include="Site Columns\TileOrder\Elements.xml" />
     <Content Include="Site Columns\Width\Elements.xml" />
+    <Content Include="Site Colums %28Settings%29\Key\Elements.xml" />
+    <Content Include="Site Colums %28Settings%29\Value\Elements.xml" />
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{e93577f8-0b20-4ea0-a868-8a92f8e211fa}</FeatureId>
+    </None>
+    <None Include="Lib\bootstrap-3.3.6\css\bootstrap-theme.css.map" />
+    <None Include="Lib\bootstrap-3.3.6\css\bootstrap-theme.min.css.map" />
+    <None Include="Lib\bootstrap-3.3.6\css\bootstrap.css.map" />
+    <None Include="Lib\bootstrap-3.3.6\css\bootstrap.min.css.map" />
+    <None Include="Lib\bootstrap-3.3.6\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Lib\bootstrap-3.3.6\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Lib\bootstrap-3.3.6\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Lib\bootstrap-3.3.6\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Lib\ionicons-2.0.1\fonts\ionicons.eot" />
+    <None Include="Lib\ionicons-2.0.1\fonts\ionicons.ttf" />
+    <None Include="Lib\ionicons-2.0.1\fonts\ionicons.woff" />
     <None Include="Lib\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{b0c4cc4c-ecc8-41d8-adb2-cae7c22efcc4}</SharePointProjectItemId>
     </None>
@@ -127,6 +162,15 @@
     <None Include="PromoLinks2Webpart\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{db6a665c-5755-4cb4-b137-e1c13f59e1bc}</SharePointProjectItemId>
     </None>
+    <None Include="SettingsContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d5761134-e20e-4b35-9ceb-0157cb59530d}</SharePointProjectItemId>
+    </None>
+    <None Include="Settings\SettingsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7200b3bc-d8ee-4005-83b0-2240c3193e24}</SharePointProjectItemId>
+    </None>
+    <None Include="Settings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8301847f-0a62-43a7-8538-5ad9cbe1ed36}</SharePointProjectItemId>
+    </None>
     <None Include="SharePointProjectItem.spdata">
       <SharePointProjectItemId>{6f4a62a0-8719-47e5-aa42-0c1ff9b3f269}</SharePointProjectItemId>
     </None>
@@ -165,6 +209,12 @@
     </None>
     <None Include="Site Columns\Width\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{f4a6c74a-f665-45a1-8928-e3e33f17bd7c}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Colums %28Settings%29\Key\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5d1d816a-59e8-4b82-8fd4-5f429843fac4}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Colums %28Settings%29\Value\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bd556f2a-a254-413a-912a-91c3c213fd61}</SharePointProjectItemId>
     </None>
   </ItemGroup>
   <ItemGroup>

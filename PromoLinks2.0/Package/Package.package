@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package dslVersion="1.0.0.0" 
-        Id="197e4d60-a260-4664-ae59-183e33e9aedb" 
-        solutionId="197e4d60-a260-4664-ae59-183e33e9aedb" 
-        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
-        name="PromoLinks2._0"
-        sharePointProductVersion="16.0">
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="197e4d60-a260-4664-ae59-183e33e9aedb" solutionId="197e4d60-a260-4664-ae59-183e33e9aedb" resetWebServer="false" sharePointProductVersion="16.0" name="PromoLinks2._0" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <features>
-        <featureReference itemId="88e482c4-803e-426c-bfb1-23aa50d7affa" />
+    <featureReference itemId="88e482c4-803e-426c-bfb1-23aa50d7affa" />
+    <featureReference itemId="e93577f8-0b20-4ea0-a868-8a92f8e211fa" />
   </features>
 </package>

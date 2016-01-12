@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="../Lib/font-awsome-4.5.0/css/font-awesome.css">
     <!-- o365icons -->
     <link rel="stylesheet" href="../Lib/o365-icons/o365-icons.css">
+    <!-- Bootstrap Glyphicon -->
+    <link rel="Stylesheet" type="text/css" href="../Lib/bootstrap-3.3.6/css/bootstrap-glyphicons-only.css" />
+    <!-- ionIcons -->
+    <link rel="Stylesheet" type="text/css" href="../Lib/ionicons-2.0.1/css/ionicons.css" />
 
     <!-- Tile.css -->
     <link rel="stylesheet" href="../Content/Tile.css">
@@ -55,13 +59,81 @@
             var width = "100%";
             resizeIFrame(height,width);
             
-            //get list data
+            //Generate Tiles 
+            refreshPreview();
+
+            //resize
+            resizeIFrame($('#webpartMain').outerHeight(true), '100%');
+        });
+
+        function resizeIFrame(height, width) {
+            if (!window.parent)
+                return;
+            var senderId = decodeURIComponent(getQueryStringParameter("SenderId"));
+            var message = "<Message senderId=" + senderId + " >"
+                    + "resize(" + width + "," + height + ")</Message>";
+            parent.postMessage(message, '*');
+        }
+
+        function getQueryStringParameter(param) {
+            if (document.URL.split("?").length > 1) {
+                var params = document.URL.split("?")[1].split("&");
+                var strParams = "";
+                for (var i = 0; i < params.length; i = i + 1) {
+                    var singleParam = params[i].split("=");
+                    if (singleParam[0] == param) {
+                        return singleParam[1];
+                    }
+                }
+            }
+            return null;
+        }
+
+        //example openDialog({url: "https://beetea-d230574feadda0.sharepoint.com/PromoLinks20/Pages/PromoLinks2Webpart.aspx"})
+        function openDialog(options) {
+            //default option settings
+            if (!(options.height)) {
+                options.height = window.innerHeight * .75;
+            }
+            if (!(options.width)) {
+                options.width = window.innerWidth * .75;
+            }
+            if (!(options.allowMaximize)) {
+                options.allowMaximize = true;
+            }
+
+            /*// Example of options
+            options = {
+                height: window.innerHeight * .75,
+                width: window.innerWidth * .75,
+                url: "https://beetea-d230574feadda0.sharepoint.com/PromoLinks20/Pages/PromoLinks2Webpart.aspx",
+                allowMaximize: true
+            }
+            //*/
+            SP.SOD.execute('sp.ui.dialog.js', 'SP.UI.ModalDialog.showModalDialog', options);
+            //SP.UI.ModalDialog.showModalDialog(options);
+        }
+
+        function refreshPreview() {
+            //Set Overall Width
+            $.ajax({
+                url: "../_api/web/lists/getByTitle('Settings')/items?$select=Value&$filter=Key eq 'OverallWidth'&top=1",
+                contentType: "application/json;odata=verbose;",
+                headers: { "accept": "application/json;odata=verbose;" },
+                success: function (data) {
+                    $('#webpartMain').width(data.d.results[0].Value);
+                },
+                error: function (err) {
+                    console.error(err);
+                    alert('Failed to load Overall Width Data');
+                }
+            });
+            //Get Tiles
             $.ajax({
                 url: "../_api/web/lists/getByTitle('Promoted Links 2.0')/items?$orderBy=TileOrder",
                 contentType: "application/json;odata=verbose;",
                 headers: { "accept": "application/json;odata=verbose;" },
                 success: function (data) {
-                    console.log(data);
                     $.each(data.d.results, function (index, value) {
 
                         var HTML_a = '<a></a>';
@@ -112,8 +184,8 @@
                         if (value.Description) {
                             HTML_a = $(HTML_a).find('.PLDescription').html(value.Description.replace(/\n/g, "<br/>")).closest('a')
                         }
-                        
-                        
+
+
                         /*
                         <a href="#">
                             <li class="PLItem PLIcon fa fa-stop-circle-o">
@@ -128,56 +200,7 @@
                         $('#webpartMain').append(HTML_a);
                     });
                 }
-            })
-
-            //resize
-            resizeIFrame($('#webpartMain').outerHeight(true), '100%');
-        });
-        function resizeIFrame(height, width) {
-            if (!window.parent)
-                return;
-            var senderId = decodeURIComponent(getQueryStringParameter("SenderId"));
-            var message = "<Message senderId=" + senderId + " >"
-                    + "resize(" + width + "," + height + ")</Message>";
-            parent.postMessage(message, '*');
-        }
-        function getQueryStringParameter(param) {
-            if (document.URL.split("?").length > 1) {
-                var params = document.URL.split("?")[1].split("&");
-                var strParams = "";
-                for (var i = 0; i < params.length; i = i + 1) {
-                    var singleParam = params[i].split("=");
-                    if (singleParam[0] == param) {
-                        return singleParam[1];
-                    }
-                }
-            }
-            return null;
-        }
-
-        //example openDialog({url: "https://beetea-d230574feadda0.sharepoint.com/PromoLinks20/Pages/PromoLinks2Webpart.aspx"})
-        function openDialog(options) {
-            //default option settings
-            if (!(options.height)) {
-                options.height = window.innerHeight * .75;
-            }
-            if (!(options.width)) {
-                options.width = window.innerWidth * .75;
-            }
-            if (!(options.allowMaximize)) {
-                options.allowMaximize = true;
-            }
-
-            /*// Example of options
-            options = {
-                height: window.innerHeight * .75,
-                width: window.innerWidth * .75,
-                url: "https://beetea-d230574feadda0.sharepoint.com/PromoLinks20/Pages/PromoLinks2Webpart.aspx",
-                allowMaximize: true
-            }
-            //*/
-            SP.SOD.execute('sp.ui.dialog.js', 'SP.UI.ModalDialog.showModalDialog', options);
-            //SP.UI.ModalDialog.showModalDialog(options);
+            });
         }
     </script>
 </head>
@@ -245,6 +268,6 @@
             </li>
         </a>
     </ul>-->
-    <ul id="webpartMain"></ul>
+    <ul id="webpartMain" class="PLul"></ul>
 </body>
 </html>

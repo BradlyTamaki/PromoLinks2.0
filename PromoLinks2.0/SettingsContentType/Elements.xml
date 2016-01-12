@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01006E3EEB6A60BF4899B13F85E3A1E8250C" Name="Settings Content Type" Group="Custom Content Types" Description="" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{6016d123-b764-4b9b-b5c2-3619712550f5}" DisplayName="Key" Required="True" Name="Key" />
+      <FieldRef ID="{4e086347-ce04-4d40-bbfe-10079c79cdd8}" DisplayName="Value" Required="FALSE" Name="Value" NumLines="4" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

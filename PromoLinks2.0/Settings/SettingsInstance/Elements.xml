@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Settings" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/Settings" Description="Settings for Promo Links 2.0">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Key">OverallWidth</Field>
+          <Field Name="Value">1300</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

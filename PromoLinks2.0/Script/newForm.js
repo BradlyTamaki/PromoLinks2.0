@@ -228,3 +228,18 @@ function getScript(url, success) {
     };
     head.appendChild(script);
 };
+
+function getValueFromSetting(Key) {
+    $.ajax({
+        url: "../_api/web/lists/getByTitle('Settings')/items?$select=Value&$filter=Key eq '" + Key + "'&top=1",
+        contentType: "application/json;odata=verbose;",
+        headers: { "accept": "application/json;odata=verbose;" },
+        success: function (data) {
+            console.log(data.d.results[0].Value);
+        },
+        error: function (err) {
+            console.alert(data);
+            alert('Failed to retrieve setting data. Please try reloading or contact the SharePoint admin.')
+        }
+    });
+}

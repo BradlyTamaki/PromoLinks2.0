@@ -48,5 +48,28 @@
     <ProjectItemFile Source="angular-1.4.8\angular-route.js" Target="Lib\angular-1.4.8\" Type="ElementFile" />
     <ProjectItemFile Source="jquery-1.11.3\jquery-1.11.3.js" Target="Lib\jquery-1.11.3\" Type="ElementFile" />
     <ProjectItemFile Source="jquery-1.11.3\jquery-1.11.3.min.js" Target="Lib\jquery-1.11.3\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap-3.3.6\css\bootstrap.css" Target="Lib\bootstrap-3.3.6\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap-3.3.6\css\bootstrap.css.map" Target="Lib\bootstrap-3.3.6\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap-3.3.6\css\bootstrap.min.css" Target="Lib\bootstrap-3.3.6\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap-3.3.6\css\bootstrap.min.css.map" Target="Lib\bootstrap-3.3.6\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap-3.3.6\css\bootstrap-theme.css" Target="Lib\bootstrap-3.3.6\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap-3.3.6\css\bootstrap-theme.css.map" Target="Lib\bootstrap-3.3.6\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap-3.3.6\css\bootstrap-theme.min.css" Target="Lib\bootstrap-3.3.6\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap-3.3.6\css\bootstrap-theme.min.css.map" Target="Lib\bootstrap-3.3.6\css\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap-3.3.6\fonts\glyphicons-halflings-regular.eot" Target="Lib\bootstrap-3.3.6\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap-3.3.6\fonts\glyphicons-halflings-regular.svg" Target="Lib\bootstrap-3.3.6\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap-3.3.6\fonts\glyphicons-halflings-regular.ttf" Target="Lib\bootstrap-3.3.6\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap-3.3.6\fonts\glyphicons-halflings-regular.woff" Target="Lib\bootstrap-3.3.6\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap-3.3.6\fonts\glyphicons-halflings-regular.woff2" Target="Lib\bootstrap-3.3.6\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap-3.3.6\js\bootstrap.js" Target="Lib\bootstrap-3.3.6\js\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap-3.3.6\js\bootstrap.min.js" Target="Lib\bootstrap-3.3.6\js\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap-3.3.6\js\npm.js" Target="Lib\bootstrap-3.3.6\js\" Type="ElementFile" />
+    <ProjectItemFile Source="bootstrap-3.3.6\css\bootstrap-glyphicons-only.css" Target="Lib\bootstrap-3.3.6\css\" Type="ElementFile" />
+    <ProjectItemFile Source="ionicons-2.0.1\fonts\ionicons.svg" Target="Lib\ionicons-2.0.1\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="ionicons-2.0.1\fonts\ionicons.ttf" Target="Lib\ionicons-2.0.1\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="ionicons-2.0.1\fonts\ionicons.woff" Target="Lib\ionicons-2.0.1\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="ionicons-2.0.1\fonts\ionicons.eot" Target="Lib\ionicons-2.0.1\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="ionicons-2.0.1\css\ionicons.min.css" Target="Lib\ionicons-2.0.1\css\" Type="ElementFile" />
+    <ProjectItemFile Source="ionicons-2.0.1\css\ionicons.css" Target="Lib\ionicons-2.0.1\css\" Type="ElementFile" />
   </Files>
 </ProjectItem>

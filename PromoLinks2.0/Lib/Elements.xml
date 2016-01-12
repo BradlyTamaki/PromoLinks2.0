@@ -47,5 +47,28 @@
     <File Path="Lib\angular-1.4.8\angular-route.js" Url="Lib/angular-1.4.8/angular-route.js" ReplaceContent="TRUE" />
     <File Path="Lib\jquery-1.11.3\jquery-1.11.3.js" Url="Lib/jquery-1.11.3/jquery-1.11.3.js" ReplaceContent="TRUE" />
     <File Path="Lib\jquery-1.11.3\jquery-1.11.3.min.js" Url="Lib/jquery-1.11.3/jquery-1.11.3.min.js" ReplaceContent="TRUE" />
+    <File Path="Lib\bootstrap-3.3.6\css\bootstrap.css" Url="Lib/bootstrap-3.3.6/css/bootstrap.css" ReplaceContent="TRUE" />
+    <File Path="Lib\bootstrap-3.3.6\css\bootstrap.css.map" Url="Lib/bootstrap-3.3.6/css/bootstrap.css.map" ReplaceContent="TRUE" />
+    <File Path="Lib\bootstrap-3.3.6\css\bootstrap.min.css" Url="Lib/bootstrap-3.3.6/css/bootstrap.min.css" ReplaceContent="TRUE" />
+    <File Path="Lib\bootstrap-3.3.6\css\bootstrap.min.css.map" Url="Lib/bootstrap-3.3.6/css/bootstrap.min.css.map" ReplaceContent="TRUE" />
+    <File Path="Lib\bootstrap-3.3.6\css\bootstrap-theme.css" Url="Lib/bootstrap-3.3.6/css/bootstrap-theme.css" ReplaceContent="TRUE" />
+    <File Path="Lib\bootstrap-3.3.6\css\bootstrap-theme.css.map" Url="Lib/bootstrap-3.3.6/css/bootstrap-theme.css.map" ReplaceContent="TRUE" />
+    <File Path="Lib\bootstrap-3.3.6\css\bootstrap-theme.min.css" Url="Lib/bootstrap-3.3.6/css/bootstrap-theme.min.css" ReplaceContent="TRUE" />
+    <File Path="Lib\bootstrap-3.3.6\css\bootstrap-theme.min.css.map" Url="Lib/bootstrap-3.3.6/css/bootstrap-theme.min.css.map" ReplaceContent="TRUE" />
+    <File Path="Lib\bootstrap-3.3.6\fonts\glyphicons-halflings-regular.eot" Url="Lib/bootstrap-3.3.6/fonts/glyphicons-halflings-regular.eot" ReplaceContent="TRUE" />
+    <File Path="Lib\bootstrap-3.3.6\fonts\glyphicons-halflings-regular.svg" Url="Lib/bootstrap-3.3.6/fonts/glyphicons-halflings-regular.svg" ReplaceContent="TRUE" />
+    <File Path="Lib\bootstrap-3.3.6\fonts\glyphicons-halflings-regular.ttf" Url="Lib/bootstrap-3.3.6/fonts/glyphicons-halflings-regular.ttf" ReplaceContent="TRUE" />
+    <File Path="Lib\bootstrap-3.3.6\fonts\glyphicons-halflings-regular.woff" Url="Lib/bootstrap-3.3.6/fonts/glyphicons-halflings-regular.woff" ReplaceContent="TRUE" />
+    <File Path="Lib\bootstrap-3.3.6\fonts\glyphicons-halflings-regular.woff2" Url="Lib/bootstrap-3.3.6/fonts/glyphicons-halflings-regular.woff2" ReplaceContent="TRUE" />
+    <File Path="Lib\bootstrap-3.3.6\js\bootstrap.js" Url="Lib/bootstrap-3.3.6/js/bootstrap.js" ReplaceContent="TRUE" />
+    <File Path="Lib\bootstrap-3.3.6\js\bootstrap.min.js" Url="Lib/bootstrap-3.3.6/js/bootstrap.min.js" ReplaceContent="TRUE" />
+    <File Path="Lib\bootstrap-3.3.6\js\npm.js" Url="Lib/bootstrap-3.3.6/js/npm.js" ReplaceContent="TRUE" />
+    <File Path="Lib\bootstrap-3.3.6\css\bootstrap-glyphicons-only.css" Url="Lib/bootstrap-3.3.6/css/bootstrap-glyphicons-only.css" ReplaceContent="TRUE" />
+    <File Path="Lib\ionicons-2.0.1\fonts\ionicons.svg" Url="Lib/ionicons-2.0.1/fonts/ionicons.svg" ReplaceContent="TRUE" />
+    <File Path="Lib\ionicons-2.0.1\fonts\ionicons.ttf" Url="Lib/ionicons-2.0.1/fonts/ionicons.ttf" ReplaceContent="TRUE" />
+    <File Path="Lib\ionicons-2.0.1\fonts\ionicons.woff" Url="Lib/ionicons-2.0.1/fonts/ionicons.woff" ReplaceContent="TRUE" />
+    <File Path="Lib\ionicons-2.0.1\fonts\ionicons.eot" Url="Lib/ionicons-2.0.1/fonts/ionicons.eot" ReplaceContent="TRUE" />
+    <File Path="Lib\ionicons-2.0.1\css\ionicons.min.css" Url="Lib/ionicons-2.0.1/css/ionicons.min.css" ReplaceContent="TRUE" />
+    <File Path="Lib\ionicons-2.0.1\css\ionicons.css" Url="Lib/ionicons-2.0.1/css/ionicons.css" ReplaceContent="TRUE" />
   </Module>
 </Elements>
