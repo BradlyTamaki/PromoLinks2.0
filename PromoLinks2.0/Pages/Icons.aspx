@@ -59,7 +59,7 @@
             font-size: 8em;
             padding: 15px;
         }
-        selectedIcon-tdclassName {
+        .selectedIcon-tdclassName {
             padding-left:15px;
         }
 
@@ -114,7 +114,7 @@
                 <table>
                     <tr>
                         <td class="selectedIcon-tdicon"><i class="{{selectedIcon.set}} {{selectedIcon.className}}"></i></td>
-                        <td class="selectedIcon-tdclassName"><h1>{{selectedIcon.className}}</h1></td>
+                        <td class="selectedIcon-tdclassName">IconPath:<h1>{{selectedIcon.className}}</h1></td>
                     </tr>
                 </table>
             </div>

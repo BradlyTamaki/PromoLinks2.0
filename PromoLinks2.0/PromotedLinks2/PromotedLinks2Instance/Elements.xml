@@ -26,7 +26,7 @@
           <Field Name="TileOrder">2</Field>
         </Row>
         <Row>
-          <Field Name="Title">Smaller Icons (empty description)</Field>
+          <Field Name="Title">Smaller Icons</Field>
           <Field Name="Description"></Field>
           <Field Name="BackgroundImageType">Icon</Field>
           <Field Name="IconPath">fa-fort-awesome</Field>

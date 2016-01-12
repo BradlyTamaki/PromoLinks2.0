@@ -42,8 +42,10 @@ function init() {
         
         //inject css
         $('head').append("<link rel='stylesheet' href='../../Content/App.css' />");
-        $('head').append("<link rel='stylesheet' href='../../Lib/font-awsome-4.5.0/css/font-awesome.css' />");
+        $('head').append("<link rel='stylesheet' href='../../Lib/font-awsome-4.5.0/css/font-awesome.min.css' />");
         $('head').append("<link rel='stylesheet' href='../../Lib/o365-icons/o365-icons.css' />");
+        $('head').append("<link rel='stylesheet' href='../../Lib/bootstrap-3.3.6/css/bootstrap-glyphicons-only.css' />");
+        $('head').append("<link rel='stylesheet' href='../../Lib/ionicons-2.0.1/css/ionicons.min.css' />");
         $('head').append("<link rel='stylesheet' href='../../Content/Tile.css' />");
 
         //inject color picker
@@ -70,7 +72,7 @@ function init() {
         
 
         //inject iconPicker
-        $($('#DeltaPlaceHolderMain > div')[0]).append('<div id="formAside"><div id="previewBox" class="containerBox"><h2>Tile Preview</h2><div></div></div><div id="iconPicker" class="containerBox"><h2>Icon Picker</h2><div></div></div></div>')
+        $($('#DeltaPlaceHolderMain > div')[0]).append('<div id="formAside"><div id="previewBox" class="containerBox"><h2>Tile Preview</h2><div></div></div><div id="iconPicker" class="containerBox"><a class="iconInfo" title="Search for icons." target="_blank" href="../../Pages/Icons.aspx"><i class="ion ion-search"></i></a><h2>Icon Picker</h2><div></div></div></div>')
         
         //Get icons
         var icons = null;
@@ -88,10 +90,16 @@ function init() {
         //Apply icons
         if (icons) {
             $.each(icons["fa-icons"].icons, function (index, value) {
-                $('#iconPicker > div').append("<i title= '" + value.className + "'class='fa fa-2x " + value.className + "' icon='" + value.className + "'></i>");
+                $('#iconPicker > div').append("<i title= '" + value.className + "'class='fa " + value.className + "' icon='" + value.className + "'></i>");
             });
             $.each(icons["o365i-icons"].icons, function (index, value) {
-                $('#iconPicker > div').append("<i title= '" + value.className + "' class='o365i o365i-2x " + value.className + "' icon='" + value.className + "'></i>")
+                $('#iconPicker > div').append("<i title= '" + value.className + "' class='o365i " + value.className + "' icon='" + value.className + "'></i>")
+            });
+            $.each(icons["glyphicon-icons"].icons, function (index, value) {
+                $('#iconPicker > div').append("<i title= '" + value.className + "' class='glyphicon " + value.className + "' icon='" + value.className + "'></i>")
+            });
+            $.each(icons["ionicons"].icons, function (index, value) {
+                $('#iconPicker > div').append("<i title= '" + value.className + "' class='ion " + value.className + "' icon='" + value.className + "'></i>")
             });
         }
 

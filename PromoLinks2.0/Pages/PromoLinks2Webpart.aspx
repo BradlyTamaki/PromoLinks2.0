@@ -150,6 +150,10 @@
                                 break;
                         }
 
+                        /*// use this script in default.aspx. to replace href with edit tile links. (Otherwise comment this out)
+                        HTML_a = $(HTML_a).attr('href', '../Lists/PromotedLinks2.0/EditForm.aspx?ID=' + value.ID + '&Source=../../Pages/Default.aspx').attr('target', '_blank');
+                        //*/
+
                         //PLItem Structure
                         HTML_a = $(HTML_a).html('<li class="PLItem"><div class="PLOverlay"><div class="PLTitle"></div><div class="PLDescription"></div></div></li>')
 
