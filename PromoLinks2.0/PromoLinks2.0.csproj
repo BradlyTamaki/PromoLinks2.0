@@ -48,6 +48,7 @@
     <Content Include="Features\Feature2\Feature2.Template.xml">
       <DependentUpon>Feature2.feature</DependentUpon>
     </Content>
+    <Content Include="Images\loading.gif" />
     <Content Include="Lib\angular-1.4.8\angular-route.js" />
     <Content Include="Lib\angular-1.4.8\angular.js" />
     <Content Include="Lib\angular-1.4.8\angular.min.js" />
@@ -79,7 +80,7 @@
       <OpcRelationship>feature-elementmanifest</OpcRelationship>
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Script\newForm.js" />
+    <Content Include="Scripts\newForm.js" />
     <Content Include="SettingsContentType\Elements.xml" />
     <Content Include="Settings\Elements.xml" />
     <Content Include="Settings\Schema.xml" />
@@ -276,6 +277,7 @@
   <ItemGroup>
     <Reference Include="System.Web" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

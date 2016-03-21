@@ -50,20 +50,12 @@
         })();
 
     </script>
-    <script>
+    <script>        
         //resize
         resizeIFrame('300px', '100%');
         $(document).ready(function () {
-            //init resize
-            var height = jQuery('#webpartMain').outerHeight(true);
-            var width = "100%";
-            resizeIFrame(height,width);
-            
             //Generate Tiles 
             refreshPreview();
-
-            //resize
-            resizeIFrame($('#webpartMain').outerHeight(true), '100%');
         });
 
         function resizeIFrame(height, width) {
@@ -134,16 +126,17 @@
                 contentType: "application/json;odata=verbose;",
                 headers: { "accept": "application/json;odata=verbose;" },
                 success: function (data) {
+                    $('#webpartMain').html('');
                     $.each(data.d.results, function (index, value) {
 
                         var HTML_a = '<a></a>';
 
                         switch (value.LaunchBehavior) {
                             case "In page navigation":
-                                HTML_a = $(HTML_a).attr('href', value.LinkLocation.Url);
+                                HTML_a = $(HTML_a).attr('href', value.LinkLocation.Url).attr('target', '_parent');
                                 break;
                             case "Dialog":
-                                HTML_a = $(HTML_a).attr('href', value.LinkLocation.Url);
+                                HTML_a = $(HTML_a).attr('data-href', value.LinkLocation.Url).addClass('sp_dialog');
                                 break;
                             case "New Tab":
                                 HTML_a = $(HTML_a).attr('href', value.LinkLocation.Url).attr('target', '_blank');
@@ -203,6 +196,9 @@
 
                         $('#webpartMain').append(HTML_a);
                     });
+
+                    //resize iFrame
+                    resizeIFrame($('#webpartMain').outerHeight(true), '100%');
                 }
             });
         }
@@ -272,6 +268,8 @@
             </li>
         </a>
     </ul>-->
-    <ul id="webpartMain" class="PLul"></ul>
+    <ul id="webpartMain" class="PLul">
+        <img class='loadingGif' src="../Images/loading.gif" />
+    </ul>
 </body>
 </html>

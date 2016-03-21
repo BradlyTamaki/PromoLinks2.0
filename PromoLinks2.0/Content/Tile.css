@@ -68,3 +68,8 @@
 .PLItem:hover .PLDescription {
     display: inline;
 }
+
+img.loadingGif {
+   width: 100px;
+   height: 100px; 
+}

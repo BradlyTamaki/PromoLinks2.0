@@ -36,7 +36,7 @@
           <Field Name="LinkLocation">/</Field>
           <Field Name="Width">100</Field>
           <Field Name="Height">100</Field>
-          <Field Name="LaunchBehavior">Dialog</Field>
+          <Field Name="LaunchBehavior">New Tab</Field>
           <Field Name="TileOrder">3</Field>
         </Row>
         <Row>
