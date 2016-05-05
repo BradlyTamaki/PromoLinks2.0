@@ -4,7 +4,7 @@
      Name="PromoLinks20"
      ProductID="{d9a5ce2e-ace1-4c24-9f30-bf778b224f43}"
      Version="1.0.0.0"
-     SharePointMinVersion="16.0.0.0"
+     SharePointMinVersion="15.0.0.0"
 >
   <Properties>
     <Title>PromoLinks2.0</Title>

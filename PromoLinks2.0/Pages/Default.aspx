@@ -63,8 +63,8 @@
             //setting_OverallWidth
             $.ajax({
                 url: "../_api/web/lists/getByTitle('Settings')/items?$select=Value&$filter=Key eq 'OverallWidth'&top=1",
-                contentType: "application/json;odata=verbose;",
-                headers: { "accept": "application/json;odata=verbose;" },
+                contentType: "application/json;odata=verbose",
+                headers: { "accept": "application/json;odata=verbose" },
                 success: function (data) {
                     $('#setting_OverallWidth textarea').val(data.d.results[0].Value);
                     //TODO: need keyup/keydown functionality here
@@ -121,8 +121,8 @@
             //Set Overall Width
             $.ajax({
                 url: "../_api/web/lists/getByTitle('Settings')/items?$select=Value&$filter=Key eq 'OverallWidth'&top=1",
-                contentType: "application/json;odata=verbose;",
-                headers: { "accept": "application/json;odata=verbose;" },
+                contentType: "application/json;odata=verbose",
+                headers: { "accept": "application/json;odata=verbose" },
                 success: function (data) {
                     $('#webpartMain').width(data.d.results[0].Value);
                 },
@@ -134,12 +134,12 @@
             //Get Tiles
             $.ajax({
                 url: "../_api/web/lists/getByTitle('Promoted Links 2.0')/items?$orderBy=TileOrder",
-                contentType: "application/json;odata=verbose;",
-                headers: { "accept": "application/json;odata=verbose;" },
+                contentType: "application/json;odata=verbose",
+                headers: { "accept": "application/json;odata=verbose" },
                 success: function (data) {
                     $.each(data.d.results, function (index, value) {
 
-                        var HTML_a = '<a></a>';
+                        var HTML_a = '<a class="PLItem"></a>';
 
                         switch (value.LaunchBehavior) {
                             case "In page navigation":
@@ -157,32 +157,32 @@
                         HTML_a = $(HTML_a).attr('href', '../Lists/PromotedLinks2.0/EditForm.aspx?ID=' + value.ID + '&Source=../../Pages/Default.aspx').attr('target', '_blank');
                         //*/
 
-                        //PLItem Structure
-                        HTML_a = $(HTML_a).html('<li class="PLItem"><div class="PLOverlay"><div class="PLTitle"></div><div class="PLDescription"></div></div></li>')
+                        //li Structure
+                        HTML_a = $(HTML_a).html('<li><div class="PLOverlay"><div class="PLTitle"></div><div class="PLDescription"></div></div></li>')
 
                         //TileWidth
-                        HTML_a = $(HTML_a).children().width(value.Width).parent();
+                        HTML_a = $(HTML_a).width(value.Width);
 
                         //TileHeight
-                        HTML_a = $(HTML_a).children().height(value.Height).parent();
+                        HTML_a = $(HTML_a).height(value.Height);
 
                         //BackgroundImageType, IconPath, BackgroundImage
                         if (value.BackgroundImageType == 'Icon') {
                             var iconLib = value.IconPath.substring(0, value.IconPath.indexOf('-'))
-                            HTML_a = $(HTML_a).children().addClass('PLIcon ' + iconLib + ' ' + value.IconPath).parent()
+                            HTML_a = $(HTML_a).children().addClass('PLIcon ' + iconLib + ' ' + value.IconPath).parent();
                         }
                         else if (value.BackgroundImageType == 'Image') {
-                            HTML_a = $(HTML_a).children().addClass('PLImg').prepend('<img src="' + value.BackgroundImage.Url + '" />').parent()
+                            HTML_a = $(HTML_a).children().addClass('PLImg').prepend('<img src="' + value.BackgroundImage.Url + '" />').parent();
                         }
 
                         //IconSize
-                        HTML_a = $(HTML_a).children().css('font-size', value.IconSize).parent();
+                        HTML_a = $(HTML_a).css('font-size', value.IconSize);
 
                         //IconColor
-                        HTML_a = $(HTML_a).children().css('color', value.IconColor).parent();
+                        HTML_a = $(HTML_a).css('color', value.IconColor);
 
                         //BackgroundColor
-                        HTML_a = $(HTML_a).children().css('background-color', value.BackgroundColor).parent();
+                        HTML_a = $(HTML_a).css('background-color', value.BackgroundColor);
 
                         //Title
                         HTML_a = $(HTML_a).find('.PLTitle').prepend(value.Title).closest('a');
@@ -229,32 +229,32 @@
         <h2>Tile Configuration</h2>
         <div>
             <ul class="PLul">
-	            <a href="../Lists/PromotedLinks2.0/NewForm.aspx?Source=../../Pages/Default.aspx">
-		            <li class="PLItem PLIcon fa fa-plus" style="width: 150px; height: 150px; font-size: 100px; color: #ffffff; background-color: rgb(140, 143, 247);">
+	            <a href="../Lists/PromotedLinks2.0/NewForm.aspx?Source=../../Pages/Default.aspx" class="PLItem" style="width: 150px; height: 150px; font-size: 100px; color: #ffffff; background-color: rgb(140, 143, 247);">
+		            <li class="PLIcon fa fa-plus">
 			            <div class="PLOverlay">
 				            <div class="PLTitle">New Tile</div>
 				            <div class="PLDescription">Add a new tile to your collection</div>
 			            </div>
 		            </li>
 	            </a>
-	            <a href="../Lists/PromotedLinks2.0">
-		            <li class="PLItem PLIcon fa fa-list" style="width: 150px; height: 150px; font-size: 100px; color: #ffffff; background-color: rgb(140, 143, 247);">
+	            <a href="../Lists/PromotedLinks2.0" class="PLItem" style="width: 150px; height: 150px; font-size: 100px; color: #ffffff; background-color: rgb(140, 143, 247);">
+		            <li class="PLIcon fa fa-list">
 			            <div class="PLOverlay">
 				            <div class="PLTitle">Modify Tiles</div>
 				            <div class="PLDescription">Add, Modify, Delete Tiles</div>
 			            </div>
 		            </li>
 	            </a>
-	            <a href="Icons.aspx">
-		            <li class="PLItem PLIcon fa fa-search" style="width: 150px; height: 150px; font-size: 100px; color: #ffffff; background-color: rgb(140, 143, 247);">
+	            <a href="Icons.aspx" class="PLItem" style="width: 150px; height: 150px; font-size: 100px; color: #ffffff; background-color: rgb(140, 143, 247);">
+		            <li class="PLIcon fa fa-search">
 			            <div class="PLOverlay">
 				            <div class="PLTitle">Explorer Icons</div>
 				            <div class="PLDescription">Click here to search for an icon you like.</div>
 			            </div>
 		            </li>
 	            </a>
-	            <a href="#">
-		            <li class="PLItem PLIcon fa fa-question-circle" style="width: 150px; height: 150px; font-size: 100px; color: #ffffff; background-color: rgb(140, 143, 247);">
+	            <a href="#" class="PLItem" style="width: 150px; height: 150px; font-size: 100px; color: #ffffff; background-color: rgb(140, 143, 247);">
+		            <li class="PLIcon fa fa-question-circle">
 			            <div class="PLOverlay">
 				            <div class="PLTitle">Examples</div>
 				            <div class="PLDescription">Click here to some of our examples.</div>

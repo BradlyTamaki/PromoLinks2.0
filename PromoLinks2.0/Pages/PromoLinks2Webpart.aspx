@@ -110,8 +110,8 @@
             //Set Overall Width
             $.ajax({
                 url: "../_api/web/lists/getByTitle('Settings')/items?$select=Value&$filter=Key eq 'OverallWidth'&top=1",
-                contentType: "application/json;odata=verbose;",
-                headers: { "accept": "application/json;odata=verbose;" },
+                contentType: "application/json;odata=verbose",
+                headers: { "accept": "application/json;odata=verbose" },
                 success: function (data) {
                     $('#webpartMain').width(data.d.results[0].Value);
                 },
@@ -123,13 +123,13 @@
             //Get Tiles
             $.ajax({
                 url: "../_api/web/lists/getByTitle('Promoted Links 2.0')/items?$orderBy=TileOrder",
-                contentType: "application/json;odata=verbose;",
-                headers: { "accept": "application/json;odata=verbose;" },
+                contentType: "application/json;odata=verbose",
+                headers: { "accept": "application/json;odata=verbose" },
                 success: function (data) {
                     $('#webpartMain').html('');
                     $.each(data.d.results, function (index, value) {
 
-                        var HTML_a = '<a></a>';
+                        var HTML_a = '<a class="PLItem"></a>';
 
                         switch (value.LaunchBehavior) {
                             case "In page navigation":
@@ -147,14 +147,14 @@
                         HTML_a = $(HTML_a).attr('href', '../Lists/PromotedLinks2.0/EditForm.aspx?ID=' + value.ID + '&Source=../../Pages/Default.aspx').attr('target', '_blank');
                         //*/
 
-                        //PLItem Structure
-                        HTML_a = $(HTML_a).html('<li class="PLItem"><div class="PLOverlay"><div class="PLTitle"></div><div class="PLDescription"></div></div></li>')
+                        //li Structure
+                        HTML_a = $(HTML_a).html('<li><div class="PLOverlay"><div class="PLTitle"></div><div class="PLDescription"></div></div></li>')
 
                         //TileWidth
-                        HTML_a = $(HTML_a).children().width(value.Width).parent();
+                        HTML_a = $(HTML_a).width(value.Width);
 
                         //TileHeight
-                        HTML_a = $(HTML_a).children().height(value.Height).parent();
+                        HTML_a = $(HTML_a).height(value.Height);
 
                         //BackgroundImageType, IconPath, BackgroundImage
                         if (value.BackgroundImageType == 'Icon') {
@@ -166,13 +166,13 @@
                         }
 
                         //IconSize
-                        HTML_a = $(HTML_a).children().css('font-size', value.IconSize).parent();
+                        HTML_a = $(HTML_a).css('font-size', value.IconSize);
 
                         //IconColor
-                        HTML_a = $(HTML_a).children().css('color', value.IconColor).parent();
+                        HTML_a = $(HTML_a).css('color', value.IconColor);
 
                         //BackgroundColor
-                        HTML_a = $(HTML_a).children().css('background-color', value.BackgroundColor).parent();
+                        HTML_a = $(HTML_a).css('background-color', value.BackgroundColor);
 
                         //Title
                         HTML_a = $(HTML_a).find('.PLTitle').prepend(value.Title).closest('a');
